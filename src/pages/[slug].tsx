@@ -29,7 +29,9 @@ const ProfilePage: NextPage<{ username: string }> = ({ username }) => {
           />
         </div>
         <div className="h-[64px]"></div>
-        <div className="p-4 text-2xl font-bold">{`@${data.username}`}</div>
+        <div className="p-4 text-2xl font-bold">{`@${
+          data.username ?? ""
+        }`}</div>
         <div className="border-b border-slate-400"></div>
       </PageLayout>
     </>
@@ -50,7 +52,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   });
 
   const slug = context.params?.slug;
-  console.log(`getStaticProps: slug=${slug}`);
+  // console.log(`getStaticProps: slug=${slug}`);
 
   if (typeof slug !== "string") throw new Error("no slug");
 

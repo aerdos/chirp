@@ -1,6 +1,5 @@
 import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 import { type NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -36,8 +35,6 @@ const CreatePostWizard = () => {
       }
     },
   });
-
-  console.log(`CreatePostWizard: user= ${user}`);
 
   if (!user) return null;
 
