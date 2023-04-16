@@ -62,7 +62,6 @@ import { appRouter } from "~/server/api/root";
 import { prisma } from "~/server/db";
 import superjson from "superjson";
 import { PageLayout } from "~/components/layout";
-import { proseWrap } from "prettier.config.cjs";
 import { LoadingPage } from "~/components/loading";
 import { PostView } from "~/components/postview";
 
