@@ -1,4 +1,4 @@
-import { GetStaticProps, type NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import { api } from "~/utils/api";
 import Head from "next/head";
 import Image from "next/image";

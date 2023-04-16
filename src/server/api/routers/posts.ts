@@ -11,7 +11,7 @@ import {
 import { Ratelimit } from "@upstash/ratelimit"; // for deno: see above
 import { Redis } from "@upstash/redis";
 import { filterUserForClient } from "~/server/helpers/filterUserForClient";
-import { Post } from "@prisma/client";
+import type { Post } from "@prisma/client";
 
 const addUserDataToPosts = async (posts: Post[]) => {
   const users = (
